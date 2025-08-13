@@ -25,7 +25,7 @@ if __name__ == "__main__":
 	if '--help' in sys.argv:
 		help_message = f"Usage: {sys.argv[0]} --name <NAME> --greeting <GREETING>"
 		print(help_message)
-		sys.exit
+		sys.exit()
 
 	if '--name' in sys.argv:
 		# Get position after name flag
