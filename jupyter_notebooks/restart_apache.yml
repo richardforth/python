@@ -1,0 +1,11 @@
+---
+- name: Restart Apache2
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: restart apache
+      service:
+        name: apache2
+        status: restarted
+
