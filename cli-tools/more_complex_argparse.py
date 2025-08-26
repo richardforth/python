@@ -55,7 +55,11 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.func == 'sailors':
         greet(args.greeting, args.name)
-    elif args.command == 'list':
-        list_ships()
+    elif args.func == 'ships':
+        if args.command == 'list':
+            list_ships()
+        else:
+            sail()
     else:
-        sail()
+        parser.print_usage()
+        
