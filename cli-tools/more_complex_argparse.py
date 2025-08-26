@@ -61,5 +61,5 @@ if __name__ == "__main__":
         else:
             sail()
     else:
-        parser.print_usage()
+        parser.print_help()
         
